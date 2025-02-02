@@ -102,15 +102,15 @@ describe('calculateNumber', () => {
     });
 
     it('positive number and 0', () => {
-      assert.strictEqual(calculateNumber('DIVIDE', 5.0, 0), 'Error');
+      assert.strictEqual(calculateNumber('DIVIDE', 5.0, 0), 'Error: Division by 0');
     });
 
     it('negative number and 0', () => {
-      assert.strictEqual(calculateNumber('DIVIDE', -5.0, 0), 'Error');
+      assert.strictEqual(calculateNumber('DIVIDE', -5.0, 0), 'Error: Division by 0');
     });
 
     it('0 and 0', () => {
-      assert.strictEqual(calculateNumber('DIVIDE', 0.0, 0.0), 'Error');
+      assert.strictEqual(calculateNumber('DIVIDE', 0.0, 0.0), 'Error: Division by 0');
     });
   });
 });
