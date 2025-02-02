@@ -52,15 +52,15 @@ describe('calculateNumber', () => {
     });
 
     it('equal negative numbers', () => {
-      assert.strictEqual(calculateNumber('MULTIPLY', -2.0, -2.0), -4);
+      assert.strictEqual(calculateNumber('MULTIPLY', -2.0, -2.0), 4);
     });
 
     it('negative and positive numbers', () => {
-      assert.strictEqual(calculateNumber('MULTIPLY', -2.0, 2.0), 0);
+      assert.strictEqual(calculateNumber('MULTIPLY', -2.0, 2.0), -4);
     });
 
     it('positive and negative numbers', () => {
-      assert.strictEqual(calculateNumber('MULTIPLY', 2.0, -2.0), 0);
+      assert.strictEqual(calculateNumber('MULTIPLY', 2.0, -2.0), -4);
     });
 
     it('0 and 0', () => {
